@@ -10,20 +10,20 @@ int main() {
     //Carta 1 
     char estado1;
     char CodigodaCarta1[50]; 
-    char cidade1[10];
-    int população1, PontosTuristicos1;
+    char cidade1[50];
+    int populacao1, PontosTuristicos1;
     float area1, pib1; 
     //Carta 2 
     char estado2;
     char CodigodaCarta2[50]; 
-    char cidade2[10];
-    int população2, PontosTuristicos2;
+    char cidade2[50];
+    int populacao2, PontosTuristicos2;
     float area2, pib2; 
 
     // Cadastro da 1° Carta. 
     printf("Vamos cadastrar a 1° Carta: \n");
     printf("Qual é o estado? \n");
-    scanf("%s", &estado1);
+    scanf("%c", &estado1);
 
     printf("Qual o código? \n");
     scanf("%s", &CodigodaCarta1);
@@ -32,7 +32,7 @@ int main() {
     scanf("%s", &cidade1);
 
     printf("Qual a população? \n");
-    scanf("%d", &população1);
+    scanf("%d", &populacao1);
 
     printf("Qual área em km²? \n");
     scanf("%f", &area1);
@@ -43,13 +43,44 @@ int main() {
     printf("Quantos pontos turísticos possui? \n");
     scanf("%d", &PontosTuristicos1);
     
-    printf("Estado: %s \n", estado1);
+    printf("Estado: %c \n", estado1);
     printf("Código: %s \n", CodigodaCarta1);
     printf("Nome da Cidade: %s \n", cidade1);
-    printf("População: %d \n", população1);
-    printf("Área: %f km² \n", area1);
-    printf("PIB: %f \n", pib1);
+    printf("População: %d \n", populacao1);
+    printf("Área: %.2f km² \n", area1);
+    printf("PIB: %.2f \n", pib1);
     printf("Número de Pontos Turísticos: %d \n", PontosTuristicos1);
+
+    // Cadastro da 2° Carta. 
+    printf("Vamos cadastrar a 2° Carta: \n");
+    printf("Qual é o estado? \n");
+    scanf("%c", &estado2);
+
+    printf("Qual o código? \n");
+    scanf("%s", &CodigodaCarta2);
+
+    printf("Qual o nome da cidade? \n");
+    scanf("%s", &cidade2);
+
+    printf("Qual a população? \n");
+    scanf("%d", &populacao2);
+
+    printf("Qual área em km²? \n");
+    scanf("%f", &area2);
+
+    printf("Qual é o PIB? \n");
+    scanf("%f", &pib2);
+
+    printf("Quantos pontos turísticos possui? \n");
+    scanf("%d", &PontosTuristicos2);
+    
+    printf("Estado: %c \n", estado2);
+    printf("Código: %s \n", CodigodaCarta2);
+    printf("Nome da Cidade: %s \n", cidade2);
+    printf("População: %d \n", populacao2);
+    printf("Área: %.2f km² \n", area2);
+    printf("PIB: %.2f \n", pib2);
+    printf("Número de Pontos Turísticos: %d \n", PontosTuristicos2);
 
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.

@@ -54,7 +54,7 @@ int main() {
     // Cadastro da 2° Carta. 
     printf("Vamos cadastrar a 2° Carta: \n");
     printf("Qual é o estado? \n");
-    scanf("%c", &estado2);
+    scanf(" A%c", &estado2);
 
     printf("Qual o código? \n");
     scanf("%s", &CodigodaCarta2);
